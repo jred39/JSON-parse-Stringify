@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Objects, Local Storage</title>
+	<title>JSON Parse Stringify</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
@@ -13,7 +13,8 @@
 		});
 	});
     
-    
+    var obj = JSON.parse('{ "name":"John", "age":37, "city":"New York"}');
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + ", " +obj.city;
     
 	</script>
 	<style>
