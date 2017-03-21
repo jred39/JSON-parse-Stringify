@@ -6,15 +6,15 @@
 	$(document).ready(function(){
         
         $("button").click(function() {
-  			var nome = document.getElementById('objName');
-           
-           document.write("New Client: " + nome.value + " #: " + num.value + " Area Code: "  + code.value + " Business: " + bus.value);
-           
+        	var infoStuff = document.getElementById("infostuff");
+            var obj = JSON.parse(infoStuff)
+  			 //var obj = JSON.parse('{ "name":"John", "age":37, "city":"New York"}');
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + ", " +obj.city;
+           return obj;
 		});
 	});
     
-    var obj = JSON.parse('{ "name":"John", "age":37, "city":"New York"}');
-document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + ", " +obj.city;
+   
     
 	</script>
 	<style>
@@ -50,7 +50,7 @@ document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + ", " +ob
 
 	<h1>Client Info:</h1>
     
-	<p></p>
+	<p id="infostuff"> "name":"John", "age":37, "city":"New York"</p>
 	<button>Parse</button>
 	<div id="box1"></div>
 	<section id="result_display"></section>
