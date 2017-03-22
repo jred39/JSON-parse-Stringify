@@ -6,11 +6,10 @@
 	$(document).ready(function(){
         
         $("button").click(function() {
-        	var infoStuff = document.getElementById("infostuff");
-            var obj = JSON.parse(infoStuff)
-  			 //var obj = JSON.parse('{ "name":"John", "age":37, "city":"New York"}');
-document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + ", " +obj.city;
-           return obj;
+        	//var infoStuff = document.getElementById("infostuff");
+            //var obj = JSON.parse(infoStuff)
+  			var obj = JSON.parse('{ "name":"John", "age":37, "city":"New York"}');
+document.getElementById("box1").innerHTML = obj.name + ", " + obj.age + ", " +obj.city;
 		});
 	});
     
@@ -25,13 +24,15 @@ document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + ", " +ob
 		color: white;
 	}
 	p {
-    	margin-left:50%;
+    	
 		color:white;
 	}
-	box1 {
-		height: 70px;
-		width: 70px;
-		border: 10px solid red;
+	#box1 {
+		border:2px solid white;
+        height:40px;
+        padding:5px;
+        width:275px;
+        text-align:center;
 	}
     
     button {
