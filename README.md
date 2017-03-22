@@ -7,9 +7,9 @@
         
         $("button").click(function() {
         	//var infoStuff = document.getElementById("infostuff");
-            //var obj = JSON.parse(infoStuff)
-  			var obj = JSON.parse('{ "name":"John", "age":37, "city":"New York"}');
-document.getElementById("box1").innerHTML = obj.name + ", " + obj.age + ", " +obj.city;
+            //var obj = JSON.parse(infoStuff);
+  			var obj = JSON.parse('{ "name":"Tommy Clark", "age":28, "business":"West Front"}');
+document.getElementById("box1").innerHTML = obj.name + ", " + obj.age + ", " +obj.business;
 		});
 	});
     
@@ -51,9 +51,10 @@ document.getElementById("box1").innerHTML = obj.name + ", " + obj.age + ", " +ob
 
 	<h1>Client Info:</h1>
     
-	<p id="infostuff"> "name":"John", "age":37, "city":"New York"</p>
+	<p id="infostuff">Name: Tommy Clark  <br>Age: 28  <br>Business: West Front</p>
 	<button>Parse</button>
 	<div id="box1"></div>
 	<section id="result_display"></section>
 </body>
 </html>
+
